@@ -2,16 +2,19 @@ package basic.string;
 
 import java.util.Scanner;
 
-/**
- * String Builder is 
- */
 public class StringBuilderDemo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine();
-        System.out.println(s);
-        StringBuilder stringBuilder = new StringBuilder(s);
-        System.out.println(stringBuilder.capacity()); // to know the capacity
-        System.out.println(stringBuilder.length());
+        if (sc.hasNextLine()) {
+            String s = sc.nextLine();
+            StringBuilder sb = new StringBuilder(s);
+            System.out.println("Capacity: " + sb.capacity());
+            System.out.println("Length: " + sb.length());
+        } else {
+            StringBuilder sb = new StringBuilder("Hello Java");
+            System.out.println("Capacity: " + sb.capacity());
+            System.out.println("Length: " + sb.length());
+        }
+        sc.close();
     }
 }

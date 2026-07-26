@@ -10,15 +10,13 @@ public class LexicographicOrder {
         fruits.add("apple");
         fruits.add("pineapple");
         fruits.add("lemon");
-        // This will sort in lexicographic order(The way it is sort in dictionary)
+
+        // Sort in natural lexicographic order
         Collections.sort(fruits);
-        // for reverse order
+        System.out.println("Lexicographical Order: " + fruits);
+
+        // Sort in reverse order
         Collections.sort(fruits, Collections.reverseOrder());
-
-        for (String x: fruits
-             ) {
-            System.out.println(x);
-
-        }
+        System.out.println("Reverse Lexicographical Order: " + fruits);
     }
 }

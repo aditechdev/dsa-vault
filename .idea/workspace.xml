@@ -87,19 +87,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="basic.oopsDemo.oopsDogs.animalDemo.AnimalTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="basic.oopsDemo.oopsDogs.animalDemo.AnimalTest" />
-      <module name="problem_solve_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="basic.oopsDemo.oopsDogs.animalDemo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="practice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="basic.practice" />
       <module name="problem_solve_java" />
@@ -119,7 +106,6 @@
         <item itemvalue="Application.PrimeNUmber" />
         <item itemvalue="Application.BigIntDemo" />
         <item itemvalue="Application.practice" />
-        <item itemvalue="Application.basic.oopsDemo.oopsDogs.animalDemo.AnimalTest" />
       </list>
     </recent_temporary>
   </component>
