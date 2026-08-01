@@ -1,5 +1,3 @@
-package basic.math;
-
 import java.util.Scanner;
 
 public class LCM {

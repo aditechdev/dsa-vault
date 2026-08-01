@@ -1,5 +1,3 @@
-package basic.math.normal_problem;
-
 import java.util.Random;
 
 public class RandomDemo {

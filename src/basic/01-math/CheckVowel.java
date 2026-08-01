@@ -1,4 +1,3 @@
-package basic.math.normal_problem;
 
 import java.util.Scanner;
 
