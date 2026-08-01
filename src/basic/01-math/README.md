@@ -26,35 +26,35 @@ Basic mathematical concepts frequently used in DSA, Competitive Programming, and
 
 ---
 
-## Topics
+## Table of Contents
 
-1. Natural Numbers
-2. Whole Numbers
-3. Integers
-4. Even Numbers
-5. Odd Numbers
-6. Prime Numbers
-7. Composite Numbers
-8. Co-prime Numbers
-9. Factors
-10. Divisors
-11. Prime Factorization
-12. GCD (HCF)
-13. LCM
-14. Euclidean Algorithm
-15. Sieve of Eratosthenes
-16. Modular Arithmetic
-17. Binary Exponentiation
-18. Perfect Square
-19. Perfect Cube
-20. Power of Two
-21. Power of Ten
-22. Number of Digits
-23. Digit Extraction
-24. Trailing Zeros
-25. Palindrome Number
-26. Armstrong Number
-27. Fibonacci Numbers
+1. [Natural Numbers](#1-natural-numbers)
+2. [Whole Numbers](#2-whole-numbers)
+3. [Integers](#3-integers)
+4. [Even Numbers](#4-even-numbers)
+5. [Odd Numbers](#5-odd-numbers)
+6. [Prime Number](#6-prime-number)
+7. [Composite Number](#7-composite-number)
+8. [Co-prime Numbers](#8-co-prime-numbers)
+9. [Factors](#9-factors)
+10. [Divisors](#10-divisors)
+11. [Prime Factorization](#11-prime-factorization)
+12. [GCD (HCF)](#12-gcd-hcf)
+13. [LCM](#13-lcm)
+14. [Euclidean Algorithm](#14-euclidean-algorithm)
+15. [Sieve of Eratosthenes](#15-sieve-of-eratosthenes)
+16. [Modular Arithmetic](#16-modular-arithmetic)
+17. [Binary Exponentiation](#17-binary-exponentiation)
+18. [Perfect Square](#18-perfect-square)
+19. [Perfect Cube](#19-perfect-cube)
+20. [Power of Two](#20-power-of-two)
+21. [Power of Ten](#21-power-of-ten)
+22. [Number of Digits](#22-number-of-digits)
+23. [Digit Extraction](#23-digit-extraction)
+24. [Trailing Zeros](#24-trailing-zeros)
+25. [Palindrome Number](#25-palindrome-number)
+26. [Armstrong Number](#26-armstrong-number)
+27. [Fibonacci Numbers](#27-fibonacci-numbers)
 
 ---
 
@@ -144,6 +144,10 @@ A number with more than two factors is called a **Composite Number**.
 4. Otherwise → Prime
 
 **Time Complexity:** `O(√n)`
+
+## Code
+
+- [PrimeNumber.java](src/basic/01-math/PrimeNumber.java)
 
 ---
 
