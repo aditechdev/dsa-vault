@@ -147,7 +147,7 @@ A number with more than two factors is called a **Composite Number**.
 
 ## Code
 
-- [PrimeNumber.java](src/basic/01-math/PrimeNumber.java)
+- [PrimeNumber.java](PrimeNumber.java)
 
 ---
 
