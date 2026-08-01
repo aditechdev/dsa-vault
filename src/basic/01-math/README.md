@@ -55,6 +55,7 @@ Basic mathematical concepts frequently used in DSA, Competitive Programming, and
 25. [Palindrome Number](#25-palindrome-number)
 26. [Armstrong Number](#26-armstrong-number)
 27. [Fibonacci Numbers](#27-fibonacci-numbers)
+28. [Factorial](#28-factorial)
 
 ---
 
@@ -425,6 +426,30 @@ Formula
 ```text
 F(n)=F(n−1)+F(n−2)
 ```
+
+---
+
+# 28. Factorial
+
+The **factorial** of a non-negative integer `n` is the product of all positive integers from **1** to **n**.
+
+```text
+0! = 1
+1! = 1
+2! = 2
+3! = 6
+4! = 24
+5! = 120
+```
+
+Formula
+
+```text
+n! = n × (n - 1) × (n - 2) × ... × 2 × 1
+```
+## Code
+
+- [FactorialOfNumber.java](./Factorial.java)
 
 ---
 
