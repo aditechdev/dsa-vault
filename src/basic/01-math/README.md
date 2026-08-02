@@ -1,468 +1,117 @@
-# Basic Math
+# ⚡ Basic Math — DSA Quick Revision Notes
 
-Basic mathematical concepts frequently used in DSA, Competitive Programming, and Coding Interviews.
-
----
-
-## Number Types Overview
-
-| Number Type | Examples | Common Uses |
-|-------------|----------|-------------|
-| Natural Numbers | `1, 2, 3...` | Counting, Prime Numbers |
-| Whole Numbers | `0, 1, 2...` | Counting including zero |
-| Integers | `..., -2, -1, 0, 1, 2...` | Arrays, Math, DP |
-| Even Numbers | `2, 4, 6...` | Bit Manipulation, Parity |
-| Odd Numbers | `1, 3, 5...` | Parity Checks |
-| Prime Numbers | `2, 3, 5, 7...` | Number Theory |
-| Composite Numbers | `4, 6, 8, 9...` | Factorization |
-| Co-prime Numbers | `(8, 15), (9, 28)` | GCD, Modular Arithmetic |
-| Perfect Square | `1, 4, 9, 16...` | Binary Search, Math |
-| Perfect Cube | `1, 8, 27, 64...` | Math Problems |
-| Power of Two | `1, 2, 4, 8...` | Bit Manipulation |
-| Power of Ten | `10, 100, 1000...` | Digit Problems |
-| Fibonacci Numbers | `0, 1, 1, 2, 3...` | DP, Recursion |
-| Palindrome Numbers | `121, 1331` | Number Manipulation |
-| Armstrong Numbers | `153, 370` | Basic Math Problems |
+A concise, human-readable revision cheat sheet designed for rapid interview prep and DSA technical reviews.
 
 ---
 
-## Table of Contents
+## 📌 Problem Directory & Complexity Summary
 
-1. [Natural Numbers](#1-natural-numbers)
-2. [Whole Numbers](#2-whole-numbers)
-3. [Integers](#3-integers)
-4. [Even Numbers](#4-even-numbers)
-5. [Odd Numbers](#5-odd-numbers)
-6. [Prime Number](#6-prime-number)
-7. [Composite Number](#7-composite-number)
-8. [Co-prime Numbers](#8-co-prime-numbers)
-9. [Factors](#9-factors)
-10. [Divisors](#10-divisors)
-11. [Prime Factorization](#11-prime-factorization)
-12. [GCD (HCF)](#12-gcd-hcf)
-13. [LCM](#13-lcm)
-14. [Euclidean Algorithm](#14-euclidean-algorithm)
-15. [Sieve of Eratosthenes](#15-sieve-of-eratosthenes)
-16. [Modular Arithmetic](#16-modular-arithmetic)
-17. [Binary Exponentiation](#17-binary-exponentiation)
-18. [Perfect Square](#18-perfect-square)
-19. [Perfect Cube](#19-perfect-cube)
-20. [Power of Two](#20-power-of-two)
-21. [Power of Ten](#21-power-of-ten)
-22. [Number of Digits](#22-number-of-digits)
-23. [Digit Extraction](#23-digit-extraction)
-24. [Trailing Zeros](#24-trailing-zeros)
-25. [Palindrome Number](#25-palindrome-number)
-26. [Armstrong Number](#26-armstrong-number)
-27. [Fibonacci Numbers](#27-fibonacci-numbers)
-28. [Factorial](#28-factorial)
+| ID | Problem | File Link | Time | Space | Key Formula / Technique |
+| :--- | :--- | :--- | :---: | :---: | :--- |
+| **P01** | Area of Circle & Volume of Sphere | [P01_AreaOfCircle.java](./P01_AreaOfCircle.java) | $O(1)$ | $O(1)$ | $\text{Area} = \pi r^2, \quad \text{Vol} = \frac{4}{3} \pi r^3$ |
+| **P02** | Check Vowel | [P02_CheckVowel.java](./P02_CheckVowel.java) | $O(1)$ | $O(1)$ | `Character.toLowerCase(ch)` check |
+| **P03** | Factorial of a Number | [P03_Factorial.java](./P03_Factorial.java) | $O(N)$ | $O(1)$ | $N! = N \times (N-1) \times \dots \times 1$ |
+| **P04** | Greatest Common Divisor (GCD) | [P04_GCDOfNumber.java](./P04_GCDOfNumber.java) | $O(\log(\min(A, B)))$ | $O(1)$ | $\text{GCD}(A, B) = \text{GCD}(B, A \bmod B)$ |
+| **P05** | Least Common Multiple (LCM) | [P05_LCM.java](./P05_LCM.java) | $O(\min(A, B))$ | $O(1)$ | $\text{LCM}(A, B) = (A \times B) / \text{GCD}(A, B)$ |
+| **P06** | Count Number of Digits | [P06_NumberOfDigits.java](./P06_NumberOfDigits.java) | $O(\log_{10} N)$ | $O(1)$ | $\lfloor \log_{10} N \rfloor + 1$ or `/ 10` loop |
+| **P07** | Palindrome Number Check | [P07_PalindromeCheck.java](./P07_PalindromeCheck.java) | $O(\log_{10} N)$ | $O(1)$ | $N == \text{Reverse}(N)$ |
+| **P08** | Prime Number Check & Range | [P08_PrimeNumber.java](./P08_PrimeNumber.java) | $O(\sqrt{N})$ | $O(1)$ | Check divisors from $2$ to $\sqrt{N}$ |
+| **P09** | Multiplication Table | [P09_PrintTable.java](./P09_PrintTable.java) | $O(1)$ | $O(1)$ | Iterative product $N \times i$ for $i \in [1, 10]$ |
+| **P10** | Pseudo-Random Generation | [P10_RandomDemo.java](./P10_RandomDemo.java) | $O(1)$ | $O(1)$ | `java.util.Random.nextInt(bound)` |
+| **P11** | Reverse Number | [P11_ReverseNumber.java](./P11_ReverseNumber.java) | $O(\log_{10} N)$ | $O(1)$ | $\text{rev} = (\text{rev} \times 10) + (N \bmod 10)$ |
+| **P12** | Sum of Digits | [P12_SumOfNumbers.java](./P12_SumOfNumbers.java) | $O(\log_{10} N)$ | $O(1)$ | Accumulate `sum += N % 10` |
 
 ---
 
-# Basic Math
+## 🔢 Number Types & Quick Properties
 
-Basic mathematical concepts frequently used in DSA, Competitive Programming, and Coding Interviews.
-
----
-
-# 1. Natural Numbers
-
-Natural numbers are positive whole numbers used for counting.
-
-**Examples:** `1, 2, 3, 4, ...`
-
-They cannot be:
-- Negative
-- Decimal
-- Fraction
-
----
-
-# 2. Whole Numbers
-
-Whole numbers include **0** and all natural numbers.
-
-**Examples:** `0, 1, 2, 3, ...`
+| Number Type | Examples | Key Property / Bit Trick | Common Use Case |
+| :--- | :--- | :--- | :--- |
+| **Natural Numbers** | `1, 2, 3, 4...` | $N > 0$, whole positive numbers | Counting, Loop bounds |
+| **Whole Numbers** | `0, 1, 2, 3...` | $N \ge 0$, includes zero | Array indices, Non-negative counts |
+| **Integers** | `..., -2, -1, 0, 1, 2...` | Includes negative, zero, positive | General mathematical calculations |
+| **Even Numbers** | `0, 2, 4, 6, 8...` | `(n & 1) == 0` or `n % 2 == 0` | Bit manipulation, Parity check |
+| **Odd Numbers** | `1, 3, 5, 7, 9...` | `(n & 1) != 0` or `n % 2 != 0` | Parity checks, Step increments |
+| **Prime Numbers** | `2, 3, 5, 7, 11...` | Exactly 2 divisors ($1$ and itself) | Number theory, Hashing, Cryptography |
+| **Composite Numbers** | `4, 6, 8, 9, 10...` | $>2$ factors ($0, 1$ are neither) | Factorization problems |
+| **Co-prime Numbers** | `(8, 15), (9, 28)` | $\text{GCD}(A, B) == 1$ | Modular inverses, Euler's totient |
+| **Perfect Square** | `1, 4, 9, 16, 25...` | $\sqrt{N} \in \mathbb{Z}$ | Binary search range problems |
+| **Perfect Cube** | `1, 8, 27, 64, 125...` | $\sqrt[3]{N} \in \mathbb{Z}$ | Mathematical pattern problems |
+| **Power of Two** | `1, 2, 4, 8, 16...` | `n > 0 && (n & (n - 1)) == 0` | Bit manipulation, Segment Trees |
+| **Power of Ten** | `10, 100, 1000...` | $10^k$ | Digit place-value manipulation |
+| **Fibonacci Numbers** | `0, 1, 1, 2, 3, 5...` | $F(n) = F(n-1) + F(n-2)$ | Dynamic Programming, Recursion |
+| **Palindrome Numbers**| `121, 1331, 12321` | $N == \text{Reverse}(N)$ | String/Number manipulation |
+| **Armstrong Numbers** | `153, 370, 371...` | $\sum (\text{digit})^k = N$ | Basic digit extraction practice |
 
 ---
 
-# 3. Integers
+## 🧠 Quick Interview Revision Snippets
 
-Integers include negative numbers, zero, and positive numbers.
+### 1. Digit Extraction Pattern
+Used in digit counting, digit sum, number reversal, and palindrome checks.
 
-**Examples:** `..., -3, -2, -1, 0, 1, 2, 3, ...`
-
----
-
-# 4. Even Numbers
-
-Numbers divisible by **2**.
-
-**Examples:** `2, 4, 6, 8, 10`
-
-```text
-n % 2 == 0
+```java
+int temp = Math.abs(num);
+while (temp > 0) {
+    int digit = temp % 10;   // Extract rightmost digit
+    // Process digit (e.g. sum += digit, rev = rev * 10 + digit, count++)
+    temp /= 10;              // Drop rightmost digit
+}
 ```
+- **Formula for total digits**: `(int) Math.floor(Math.log10(num)) + 1`
+- **Implementations**: 
+  - [P06_NumberOfDigits.java](./P06_NumberOfDigits.java)
+  - [P07_PalindromeCheck.java](./P07_PalindromeCheck.java)
+  - [P11_ReverseNumber.java](./P11_ReverseNumber.java)
+  - [P12_SumOfNumbers.java](./P12_SumOfNumbers.java)
 
 ---
 
-# 5. Odd Numbers
+### 2. Prime Number Check ($O(\sqrt{N})$)
+Factors always occur in pairs $(d, \frac{N}{d})$. If no factor exists $\le \sqrt{N}$, the number is prime.
 
-Numbers that are **not divisible by 2**.
-
-**Examples:** `1, 3, 5, 7, 9`
-
-```text
-n % 2 != 0
+```java
+public static boolean checkPrime(int n) {
+    if (n <= 1) return false;
+    for (int i = 2; i * i <= n; i++) { // Loop up to √N
+        if (n % i == 0) return false;
+    }
+    return true;
+}
 ```
+- **Key Facts**: $2$ is the only even prime. $0$ and $1$ are not prime.
+- **Sieve of Eratosthenes Complexity**: $O(N \log \log N)$ time, $O(N)$ space for finding all primes up to $N$.
+- **Implementation**: [P08_PrimeNumber.java](./P08_PrimeNumber.java)
 
 ---
 
-# 6. Prime Number
+### 3. GCD & LCM (Euclidean Algorithm)
+- **Euclidean Algorithm**: $\text{GCD}(A, B) = \text{GCD}(B, A \bmod B)$ until $B = 0$.
+- **Fundamental Identity**: $\text{GCD}(A, B) \times \text{LCM}(A, B) = A \times B$
 
-A **Prime Number** is a number greater than **1** that is divisible only by **1** and itself.
+```java
+// Euclidean GCD (O(log(min(A,B))))
+public static int gcd(int a, int b) {
+    while (b != 0) {
+        int temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
 
-A number with more than two factors is called a **Composite Number**.
-
-## Examples
-
-**Prime:** `2, 3, 5, 7, 11, 13, 17`
-
-**Composite:** `4, 6, 8, 9, 10, 12`
-
-## Key Points
-
-- 0 is not prime.
-- 1 is not prime.
-- 2 is the only even prime.
-- Every prime number greater than 2 is odd.
-
-## Prime Check
-
-1. If `n <= 1` → Not Prime
-2. Check divisibility from `2` to `√n`
-3. Divisor found → Composite
-4. Otherwise → Prime
-
-**Time Complexity:** `O(√n)`
-
-## Code
-
-- [PrimeNumber.java](./PrimeNumber.java)
+// LCM using GCD (O(log(min(A,B))))
+public static int lcm(int a, int b) {
+    return (a * b) / gcd(a, b);
+}
+```
+- **Implementations**: 
+  - [P04_GCDOfNumber.java](./P04_GCDOfNumber.java)
+  - [P05_LCM.java](./P05_LCM.java)
 
 ---
 
-# 7. Composite Number
-
-A **Composite Number** has more than two positive factors.
-
-**Examples:** `4, 6, 8, 9, 10`
-
----
-
-# 8. Co-prime Numbers
-
-Two numbers whose **GCD is 1**.
-
-**Examples**
-
-- `(8, 15)`
-- `(9, 28)`
-
----
-
-# 9. Factors
-
-Factors are numbers that divide another number exactly.
-
-**Factors of 12**
-
-```text
-1, 2, 3, 4, 6, 12
-```
-
----
-
-# 10. Divisors
-
-A divisor is any number that divides another number without leaving a remainder.
-
-Example:
-
-```text
-12 ÷ 3 = 4
-```
-
-So, **3** is a divisor of **12**.
-
----
-
-# 11. Prime Factorization
-
-Expressing a number as the product of prime numbers.
-
-Example
-
-```text
-24 = 2 × 2 × 2 × 3
-```
-
----
-
-# 12. GCD (HCF)
-
-The **Greatest Common Divisor** (Highest Common Factor) is the largest number that divides both numbers.
-
-Example
-
-```text
-GCD(12,18)=6
-```
-
----
-
-# 13. LCM
-
-The **Least Common Multiple** is the smallest number divisible by both numbers.
-
-Example
-
-```text
-LCM(6,8)=24
-```
-
----
-
-# 14. Euclidean Algorithm
-
-An efficient algorithm to calculate the GCD.
-
-```text
-GCD(a,b)=GCD(b,a%b)
-```
-
-**Time Complexity:** `O(log n)`
-
----
-
-# 15. Sieve of Eratosthenes
-
-Efficient algorithm to find all prime numbers up to **N**.
-
-**Time Complexity:** `O(N log log N)`
-
----
-
-# 16. Modular Arithmetic
-
-Modulo returns the remainder after division.
-
-```text
-a % b
-```
-
-Common properties:
-
-```text
-(a+b)%m=((a%m)+(b%m))%m
-
-(a*b)%m=((a%m)*(b%m))%m
-```
-
----
-
-# 17. Binary Exponentiation
-
-Efficient method to calculate large powers.
-
-```text
-a^n
-```
-
-**Time Complexity:** `O(log n)`
-
----
-
-# 18. Perfect Square
-
-A number obtained by multiplying an integer by itself.
-
-**Examples**
-
-```text
-1,4,9,16,25
-```
-
----
-
-# 19. Perfect Cube
-
-A number obtained by multiplying an integer three times.
-
-**Examples**
-
-```text
-1,8,27,64,125
-```
-
----
-
-# 20. Power of Two
-
-A number of the form:
-
-```text
-2^n
-```
-
-Examples
-
-```text
-1,2,4,8,16,32
-```
-
-Bit Trick
-
-```text
-n > 0 && (n & (n-1)) == 0
-```
-
----
-
-# 21. Power of Ten
-
-A number of the form:
-
-```text
-10^n
-```
-
-Examples
-
-```text
-10,100,1000,10000
-```
-
----
-
-# 22. Number of Digits
-
-Number of digits in an integer.
-
-Examples
-
-```text
-12345 → 5 digits
-```
-
-Formula
-
-```text
-⌊log10(n)⌋ + 1
-```
-
----
-
-# 23. Digit Extraction
-
-Extract digits using modulo and division.
-
-```text
-digit = n % 10
-n = n / 10
-```
-
----
-
-# 24. Trailing Zeros
-
-Zeros at the end of a number.
-
-Frequently asked in:
-
-- Factorial
-- Large Numbers
-
----
-
-# 25. Palindrome Number
-
-A number that reads the same forward and backward.
-
-Examples
-
-```text
-121
-1331
-12321
-```
-
----
-
-# 26. Armstrong Number
-
-A number equal to the sum of its digits raised to the power of the number of digits.
-
-Example
-
-```text
-153
-
-1³ + 5³ + 3³ = 153
-```
-
----
-
-# 27. Fibonacci Numbers
-
-A sequence where each number is the sum of the previous two.
-
-```text
-0,1,1,2,3,5,8,13,...
-```
-
-Formula
-
-```text
-F(n)=F(n−1)+F(n−2)
-```
-
----
-
-# 28. Factorial
-
-The **factorial** of a non-negative integer `n` is the product of all positive integers from **1** to **n**.
-
-```text
-0! = 1
-1! = 1
-2! = 2
-3! = 6
-4! = 24
-5! = 120
-```
-
-Formula
-
-```text
-n! = n × (n - 1) × (n - 2) × ... × 2 × 1
-```
-## Code
-
-- [FactorialOfNumber.java](./Factorial.java)
-
----
-
-Formula
-```
-gcd * lcm = product of number
-```
-
-# Time Complexity Summary
-
-| Topic | Complexity |
-|--------|------------|
-| Prime Check | O(√N) |
-| Euclidean Algorithm | O(log N) |
-| Binary Exponentiation | O(log N) |
-| Sieve of Eratosthenes | O(N log log N) |
+### 4. Factorial & Combinatorics
+- **Factorial**: $N! = N \times (N-1) \times \dots \times 1$; $0! = 1$.
+- **Time Complexity**: $O(N)$ | **Space Complexity**: $O(1)$
+- **Implementation**: [P03_Factorial.java](./P03_Factorial.java)
