@@ -1,13 +1,14 @@
-package basic.pattern;
-
 import java.util.Scanner;
 
-public class ReverseTrianglePattern {
+public class FullPyramid {
 
-    public static void printReverseTriangle(int num) {
+    public static void printPyramid(int num) {
         for (int i = num; i > 0; i--) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print(j + (i == j ? "" : " "));
+            for (int j = num - i; j >= 1; j--) {
+                System.out.print("  ");
+            }
+            for (int k = 1; k <= i; k++) {
+                System.out.print(k + " ");
             }
             System.out.println();
         }
@@ -17,9 +18,9 @@ public class ReverseTrianglePattern {
         Scanner sc = new Scanner(System.in);
         if (sc.hasNextInt()) {
             int num = sc.nextInt();
-            printReverseTriangle(num);
+            printPyramid(num);
         } else {
-            printReverseTriangle(5);
+            printPyramid(5);
         }
         sc.close();
     }

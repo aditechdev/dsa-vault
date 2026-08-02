@@ -1,5 +1,3 @@
-package basic.pattern;
-
 import java.util.Scanner;
 
 public class HalfPyramid {

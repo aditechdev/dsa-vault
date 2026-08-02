@@ -453,6 +453,11 @@ n! = n × (n - 1) × (n - 2) × ... × 2 × 1
 
 ---
 
+Formula
+```
+gcd * lcm = product of number
+```
+
 # Time Complexity Summary
 
 | Topic | Complexity |
