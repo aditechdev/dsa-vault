@@ -1,4 +1,4 @@
-package basic.M03_algorithm;
+package basic.m03_algorithm;
 
 import java.util.Scanner;
 

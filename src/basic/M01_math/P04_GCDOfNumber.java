@@ -1,4 +1,4 @@
-package basic.M01_math;
+package basic.m01_math;
 
 import java.util.Arrays;
 import java.util.List;

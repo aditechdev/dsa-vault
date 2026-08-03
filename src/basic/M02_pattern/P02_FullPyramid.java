@@ -1,4 +1,4 @@
-package basic.M02_pattern;
+package basic.m02_pattern;
 
 /**
  * Problem Definition: Full Numeric Pyramid (Simplified)

@@ -1,4 +1,4 @@
-package basic.M01_math;
+package basic.m01_math;
 
 /**
  * Problem Definition: Least Common Multiple (LCM)
