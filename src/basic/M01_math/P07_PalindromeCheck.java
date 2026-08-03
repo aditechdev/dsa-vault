@@ -1,3 +1,5 @@
+package basic.M01_math;
+
 /**
  * Problem Definition: Palindrome Check
  * Check whether a given integer reads the same forwards and backwards.

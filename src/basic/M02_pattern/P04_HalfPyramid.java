@@ -1,3 +1,5 @@
+package basic.M02_pattern;
+
 /**
  * Problem Definition: Half Pyramid (Numeric and Star)
  * Print half pyramid patterns using numbers and stars for a given number of rows.

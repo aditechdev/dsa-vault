@@ -1,3 +1,5 @@
+package basic.M01_math;
+
 /**
  * Problem Definition: Factorial of a Number
  * Calculate n! (factorial) of a non-negative integer n.

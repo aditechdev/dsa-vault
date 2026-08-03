@@ -1,21 +1,22 @@
-/**
- * Problem Definition: Greatest Common Divisor (GCD)
- * Find the largest positive integer that divides two integers or each integer in a given list of numbers.
- * 
- * Formula / Concept:
- * GCD(a, b) = GCD(b, a % b) until b = 0 (Euclidean Algorithm)
- * Or loop downwards from min(a, b) to 1 to find common divisor.
- * 
- * Algorithm:
- * 1. For two numbers: Loop i from min(a, b) down to 1; first i dividing both is GCD.
- * 2. For list of numbers: Loop i from min(numbers) down to 1; first i dividing all is GCD.
- * 
- * Time: O(min(a, b)) or O(min(N) * L)  Space: O(1)
- */
+package basic.M01_math;
 
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Problem Definition: Greatest Common Divisor (GCD)
+ * Find the largest positive integer that divides two integers or each integer in a given list of numbers.
+ *
+ * Formula / Concept:
+ * GCD(a, b) = GCD(b, a % b) until b = 0 (Euclidean Algorithm)
+ * Or loop downwards from min(a, b) to 1 to find common divisor.
+ *
+ * Algorithm:
+ * 1. For two numbers: Loop i from min(a, b) down to 1; first i dividing both is GCD.
+ * 2. For list of numbers: Loop i from min(numbers) down to 1; first i dividing all is GCD.
+ *
+ * Time: O(min(a, b)) or O(min(N) * L)  Space: O(1)
+ */
 public class P04_GCDOfNumber {
 
     // Dry Run

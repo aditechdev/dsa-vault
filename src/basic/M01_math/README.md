@@ -115,3 +115,15 @@ public static int lcm(int a, int b) {
 - **Factorial**: $N! = N \times (N-1) \times \dots \times 1$; $0! = 1$.
 - **Time Complexity**: $O(N)$ | **Space Complexity**: $O(1)$
 - **Implementation**: [P03_Factorial.java](./P03_Factorial.java)
+
+---
+
+### 5. Arithmetic Progression (AP)
+A sequence of numbers where the difference between consecutive terms is constant.
+
+**Example Sequence**: `3, 5, 7, 9, .... ithTerm`
+- $a = 3$ (First term)
+- $d = 2$ (Common difference)
+
+**Formula for the $i$-th term**:
+$$ \text{ithTerm} = a + (i-1)d $$

@@ -1,3 +1,5 @@
+package basic.M02_pattern;
+
 /**
  * Problem Definition: Reverse Triangle Pattern (Numeric)
  * Print a reverse numeric triangle pattern for a given number of rows.

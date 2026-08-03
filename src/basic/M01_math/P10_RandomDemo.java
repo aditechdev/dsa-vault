@@ -1,3 +1,7 @@
+package basic.M01_math;
+
+import java.util.Random;
+
 /**
  * Problem Definition: Random Number Generation
  * Generate a pseudo-random integer in the range [0, bound).
@@ -12,9 +16,6 @@
  * 
  * Time: O(1)  Space: O(1)
  */
-
-import java.util.Random;
-
 public class P10_RandomDemo {
 
     // Dry Run

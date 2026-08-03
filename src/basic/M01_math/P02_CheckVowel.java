@@ -1,3 +1,5 @@
+package basic.M01_math;
+
 /**
  * Problem Definition: Check Vowel
  * Given a character ch, check whether it is a vowel (a, e, i, o, u) case-insensitively.

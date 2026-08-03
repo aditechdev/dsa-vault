@@ -1,3 +1,5 @@
+package basic.M01_math;
+
 /**
  * Problem Definition: Least Common Multiple (LCM)
  * Find the smallest positive integer that is divisible by both integers a and b.

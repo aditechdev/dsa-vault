@@ -1,3 +1,5 @@
+package basic.M02_pattern;
+
 /**
  * Problem Definition: Inverted Diamond Pattern
  * Print a half diamond pattern using stars for a given number of rows.

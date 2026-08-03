@@ -67,3 +67,18 @@ for (int i = 1; i <= n; i++) {
     System.out.println();
 }
 ```
+
+
+---
+
+### 4. Using Arithmetic Progression (AP) in Patterns
+AP is frequently used to determine the exact number of characters or spaces to print per row.
+
+**Example Sequence**: `3, 5, 7, 9, .... ithTerm`
+- $a = 3$ (First term)
+- $d = 2$ (Common difference)
+
+**Formula for the $i$-th term**:
+$$ \text{ithTerm} = a + (i-1)d $$
+
+**Application**: If row 1 needs 1 star, row 2 needs 3 stars, row 3 needs 5 stars, etc., you can use AP where $a=1, d=2$ to determine that row $i$ needs $1 + (i-1)2 = 2i - 1$ stars.

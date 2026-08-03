@@ -1,3 +1,5 @@
+package basic.M01_math;
+
 /**
  * Problem Definition: Print Multiplication Table
  * Print the multiplication table of a given integer num from 1 to 10.

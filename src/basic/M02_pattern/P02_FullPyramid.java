@@ -1,3 +1,5 @@
+package basic.M02_pattern;
+
 /**
  * Problem Definition: Full Numeric Pyramid (Simplified)
  * Print a full pyramid pattern using numbers for a given number of rows.

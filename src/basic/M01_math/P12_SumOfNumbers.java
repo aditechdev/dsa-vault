@@ -1,3 +1,5 @@
+package basic.M01_math;
+
 /**
  * Problem Definition: Sum of Digits
  * Given a non-negative integer, calculate the sum of all its digits.

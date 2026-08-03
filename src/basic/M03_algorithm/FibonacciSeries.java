@@ -1,4 +1,4 @@
-package basic.algorithm;
+package basic.M03_algorithm;
 
 /**
  * <h1>Recursive Fibonacci Sequence</h1>

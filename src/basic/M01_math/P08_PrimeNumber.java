@@ -1,3 +1,5 @@
+package basic.M01_math;
+
 /**
  * Problem Definition: Prime Number Check
  * Determine if a natural number n > 1 is prime, and print all prime numbers up to limit.

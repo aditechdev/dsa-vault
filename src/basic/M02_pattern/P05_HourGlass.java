@@ -1,3 +1,5 @@
+package basic.M02_pattern;
+
 /**
  * Problem Definition: Hour Glass Pattern (Star)
  * Print an hour glass pattern using '*' for a given number of rows.
