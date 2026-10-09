@@ -10,20 +10,20 @@ dsa-vault/
 ├── docs/
 │   ├── README.md
 │   ├── 00-java-foundations/
-│   │   ├── 01-variables-and-data-types.md
-│   │   ├── 02-operators.md
-│   │   ├── 03-conditionals.md
-│   │   ├── 04-loops.md
-│   │   ├── 05-methods-and-functions.md
-│   │   ├── 06-string-stringbuilder.md
-│   │   ├── 07-scanner-bufferreader.md
-│   │   ├── 08-null.md
-│   │   ├── 09-array-2d-array.md
-│   │   ├── 11-scope-and-lifetime.md
-│   │   ├── 10-classes-and-objects.md
-│   │   ├── 11-stack-and-heap-basics.md
-│   │   ├── 12-recursion-basics.md
-│   │   └── 13-math-utilities.md
+│   │   ├── 01-variables-and-data-types.md ✅
+│   │   ├── 02-operators.md ✅
+│   │   ├── 03-conditionals.md ✅
+│   │   ├── 04-loops.md ✅
+│   │   ├── 05-methods-and-functions.md ✅
+│   │   ├── 06-string-stringbuilder.md ✅
+│   │   ├── 07-scanner-bufferreader.md ✅
+│   │   ├── 08-null.md ✅
+│   │   ├── 09-array-2d-array.md ✅
+│   │   ├── 10-scope-and-lifetime.md ⚠️PENDING
+│   │   ├── 11-classes-and-objects.md ✅
+│   │   ├── 12-stack-and-heap-basics.md ⚠️PENDING
+│   │   ├── 13-recursion-basics.md ⚠️PENDING
+│   │   └── 14-math-utilities.md ✅
 │   │
 │   ├── 01-java-collections/
 │   │   ├── 01-collections-overview.md
@@ -34,8 +34,8 @@ dsa-vault/
 │   │   ├── 06-deque.md
 │   │   ├── 07-stack.md
 │   │   ├── 08-priority-queue.md
-│   │   ├── 09-linkedlist.md #PENDING
-│   │   └── 10-comparable-and-comparator.md #PENDING
+│   │   ├── 09-linkedlist.md ⚠️PENDING
+│   │   └── 10-comparable-and-comparator.md ⚠️PENDING
 │   │
 │   ├── 02-complexity-analysis/
 │   │   ├── 01-time-complexity.md
