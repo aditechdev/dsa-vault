@@ -187,13 +187,3 @@ For every topic, capture:
 8. Practice problems, difficulty, and status
 9. Key takeaways for revision
 
-Use [NOTE-TEMPLATE.md](NOTE-TEMPLATE.md) as the starting point.
-
-## Progress Rules
-
-- **Not started:** not studied yet.
-- **In progress:** currently learning or still needs hints.
-- **Practiced:** can solve basic examples independently.
-- **Complete:** can explain, implement, test edge cases, and analyze complexity without copying.
-
-Update [learning progress](../progress/learning-progress.md), [problem tracker](../progress/problem-tracker.md), and [mistake log](../progress/mistake-log.md) as appropriate.
