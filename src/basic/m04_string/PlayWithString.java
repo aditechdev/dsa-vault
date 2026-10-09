@@ -1,4 +1,4 @@
-package basic.string;
+package basic.m04_string;
 
 public class PlayWithString {
 

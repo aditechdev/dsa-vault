@@ -1,4 +1,4 @@
-package basic.array;
+package basic.m05_array;
 
 import java.util.Scanner;
 

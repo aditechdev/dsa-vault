@@ -9,3 +9,5 @@ bin/
 
 ### Generated Javadoc / HTML Documentation ###
 documentation/
+
+docs/NOTE-TEMPLATE.md

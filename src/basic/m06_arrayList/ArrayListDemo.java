@@ -1,4 +1,4 @@
-package basic.arrayList;
+package basic.m06_arrayList;
 
 import java.util.ArrayList;
 
