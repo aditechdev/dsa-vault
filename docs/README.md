@@ -16,15 +16,17 @@ dsa-vault/
 │   │   ├── 04-conditionals.md
 │   │   ├── 05-loops.md
 │   │   ├── 06-methods-and-functions.md
-│   │   ├── 07-scope-and-lifetime.md
-│   │   ├── 08-arrays-basics.md
-│   │   ├── 09-strings-basics.md
-│   │   ├── 10-classes-and-objects.md
-│   │   ├── 11-stack-and-heap-basics.md
-│   │   ├── 12-recursion-basics.md
-│   │   ├── 13-wrapper-classes.md
-│   │   ├── 14-math-utilities.md
-│   │   └── 15-string-builder.md
+│   │   ├── 07-string-stringbuilder.md
+│   │   ├── 08-scanner-bufferreader.md
+│   │   ├── 09-scope-and-lifetime.md
+│   │   ├── 10-arrays-basics.md
+│   │   ├── 11-strings-basics.md
+│   │   ├── 12-classes-and-objects.md
+│   │   ├── 13-stack-and-heap-basics.md
+│   │   ├── 14-recursion-basics.md
+│   │   ├── 15-wrapper-classes.md
+│   │   ├── 16-math-utilities.md
+│   │   └── 17-string-builder.md
 │   ├── 01-complexity-analysis/
 │   │   ├── 01-time-complexity.md
 │   │   ├── 02-space-complexity.md
