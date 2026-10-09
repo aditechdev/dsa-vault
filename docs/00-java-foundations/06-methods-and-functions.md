@@ -279,7 +279,188 @@ This method accepts an array and returns its maximum element.
 
 **Precondition:** The array must contain at least one element. Empty-array handling can be added when required by the problem.
 
-## 11. Important Rules to Remember
+## 11. Pass-by-Value in Java
+
+Java is **always pass-by-value**. When a method is called, Java passes a copy of the argument's value to the method parameter.
+
+The behavior depends on whether the argument is a primitive value or a reference to an object.
+
+### 11.1 Passing a Primitive Value
+
+When we pass a primitive variable such as `int`, the method receives a copy of its value.
+
+```java
+static void change(int x) {
+    x = 50;
+}
+
+public static void main(String[] args) {
+    int a = 20;
+
+    change(a);
+
+    System.out.println(a); // 20
+}
+```
+
+**Dry run:**
+
+```text
+a = 20
+
+change(a)
+    ↓
+x receives a copy of 20
+    ↓
+x = 50
+    ↓
+Only local variable x changes
+    ↓
+a remains 20
+```
+
+**Key point:** Changing a primitive parameter does not change the caller's variable.
+
+### 11.2 Passing an Array and Modifying Its Elements
+
+Arrays are reference types. When an array is passed to a method, Java passes a copy of the reference value.
+
+```java
+static void changeFirstElement(int[] arr) {
+    arr[0] = 100;
+}
+
+public static void main(String[] args) {
+    int[] nums = {10, 20};
+
+    changeFirstElement(nums);
+
+    System.out.println(nums[0]); // 100
+}
+```
+
+**Why does the original array change?**
+
+Both `nums` and `arr` refer to the same array object. Therefore, modifying an element through `arr` changes the array that `nums` also refers to.
+
+```text
+nums ──┐
+       ├──> [10, 20]
+arr  ──┘
+
+After arr[0] = 100:
+
+nums ──┐
+       ├──> [100, 20]
+arr  ──┘
+```
+
+**Key point:** A method can modify the contents of a shared array.
+
+### 11.3 Reassigning an Array Parameter
+
+Reassigning a local parameter is different from modifying the array.
+
+```java
+static void replaceArray(int[] arr) {
+    arr = new int[]{100, 200};
+}
+
+public static void main(String[] args) {
+    int[] nums = {10, 20};
+
+    replaceArray(nums);
+
+    System.out.println(nums[0]); // 10
+}
+```
+
+**Why is the output `10`?**
+
+The parameter `arr` is reassigned to a new array, but the caller's variable `nums` still refers to the original array.
+
+```text
+Before method call:
+
+nums ──> [10, 20]
+arr  ──> [10, 20]
+
+After arr = new int[]{100, 200}:
+
+nums ──> [10, 20]
+arr  ──> [100, 200]
+```
+
+The two variables now refer to different arrays.
+
+### 11.4 Important Rules
+
+1. Java always passes arguments by value.
+2. A primitive parameter receives a copy of the primitive value.
+3. An array or object parameter receives a copy of the reference value.
+4. Modifying a shared object's contents can affect what the caller observes.
+5. Reassigning a local parameter does not change the caller's variable.
+6. Java does not pass variables by reference.
+
+### 11.5 Practice Questions
+
+**Question 1: Primitive value**
+
+What is the output?
+
+```java
+static void update(int x) {
+    x = 100;
+}
+
+public static void main(String[] args) {
+    int number = 10;
+    update(number);
+    System.out.println(number);
+}
+```
+
+**Question 2: Array modification**
+
+What is the output?
+
+```java
+static void update(int[] arr) {
+    arr[1] = 99;
+}
+
+public static void main(String[] args) {
+    int[] numbers = {10, 20, 30};
+    update(numbers);
+    System.out.println(numbers[1]);
+}
+```
+
+**Question 3: Array reassignment**
+
+What is the output?
+
+```java
+static void update(int[] arr) {
+    arr = new int[]{5, 6, 7};
+}
+
+public static void main(String[] args) {
+    int[] numbers = {1, 2, 3};
+    update(numbers);
+    System.out.println(numbers[0]);
+}
+```
+
+**Question 4: Explain the difference**
+
+Why does modifying `arr[0]` affect the original array, while assigning a new array to `arr` does not change the caller's variable?
+
+---
+
+**DSA takeaway:** Understanding pass-by-value helps you predict whether a method modifies an input array or object, which is essential when implementing and debugging algorithms.
+
+## 13. Important Rules to Remember
 
 1. A method has a name, a body, and a declared return type.
 2. Parameters are placeholders; arguments are supplied values.
@@ -292,7 +473,7 @@ This method accepts an array and returns its maximum element.
 9. Method calls can make code reusable and easier to understand.
 10. In DSA, methods commonly accept inputs, perform an algorithm, and return the result.
 
-## 12. Practice Questions
+## 14. Practice Questions
 
 ### Question 1: Basic method
 
