@@ -460,6 +460,203 @@ Why does modifying `arr[0]` affect the original array, while assigning a new arr
 
 **DSA takeaway:** Understanding pass-by-value helps you predict whether a method modifies an input array or object, which is essential when implementing and debugging algorithms.
 
+## 12. Method Overloading vs Method Overriding
+
+Both concepts allow methods with the same name to behave differently, but they work in different ways.
+
+| Feature | Method Overloading | Method Overriding |
+|---|---|---|
+| Meaning | Same method name with different parameter lists | Subclass provides a new implementation of an inherited method |
+| Classes involved | Can occur in the same class | Requires inheritance |
+| Parameters | Must differ in number, type, or order | Must have the same method signature |
+| Return type | Cannot distinguish overloads by itself | Must be compatible with the parent's return type |
+| Method selection | Compile time | Runtime for overridden instance methods |
+| Polymorphism | Compile-time polymorphism | Runtime polymorphism |
+
+### 12.1 Method Overloading
+
+**Method overloading** means defining multiple methods with the same name but different parameter lists.
+
+Example:
+
+```java
+class Calculator {
+
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    int add(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    double add(double a, double b) {
+        return a + b;
+    }
+}
+```
+
+Usage:
+
+```java
+Calculator calculator = new Calculator();
+
+System.out.println(calculator.add(2, 3));      // 5
+System.out.println(calculator.add(2, 3, 4));   // 9
+System.out.println(calculator.add(2.5, 3.5));  // 6.0
+```
+
+Java selects the appropriate overload at **compile time**, based on the arguments and applicable method signatures.
+
+Overloaded methods can differ by:
+
+- Number of parameters.
+- Parameter types.
+- Order of parameter types.
+
+**Important:** Changing only the return type does not create a valid overload.
+
+```java
+// Invalid: same name and same parameter list.
+
+// int getValue() {
+//     return 1;
+// }
+
+// double getValue() {
+//     return 1.0;
+// }
+```
+
+The compiler cannot distinguish these methods using only their return types.
+
+### 12.2 Method Overriding
+
+**Method overriding** occurs when a subclass provides its own implementation of an inherited instance method with the same signature.
+
+Example:
+
+```java
+class Animal {
+
+    void makeSound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+
+    @Override
+    void makeSound() {
+        System.out.println("Dog barks");
+    }
+}
+```
+
+Usage:
+
+```java
+Animal animal = new Dog();
+
+animal.makeSound(); // Dog barks
+```
+
+Why does this print `"Dog barks"`?
+
+```java
+Animal animal = new Dog();
+```
+
+- `Animal` is the **reference type**.
+- `Dog` is the **actual object type**.
+- `Dog` overrides the `makeSound()` method.
+- Java invokes the overridden implementation belonging to the actual object at runtime.
+
+This behavior is called **runtime polymorphism**.
+
+The `@Override` annotation tells the compiler that the method is intended to override an inherited method. It is optional, but recommended because it helps catch mistakes.
+
+### 12.3 Rules for Method Overriding
+
+1. The subclass method must have the same signature as the inherited method.
+2. The return type must be the same or a valid covariant return type.
+3. The access level cannot be more restrictive than that of the overridden method.
+4. A `final` method cannot be overridden.
+5. A `private` method is not inherited and therefore cannot be overridden.
+6. `static` methods are hidden, not overridden.
+7. Constructors cannot be overridden because constructors are not methods.
+
+### 12.4 Side-by-Side Examples
+
+**Overloading:** Same method name, different parameters.
+
+```java
+class Printer {
+
+    void print(int value) {
+        System.out.println(value);
+    }
+
+    void print(String value) {
+        System.out.println(value);
+    }
+}
+```
+
+Both methods belong to the same class. The compiler selects the suitable method based on the supplied argument.
+
+**Overriding:** Same signature, different implementation in a subclass.
+
+```java
+class Parent {
+
+    void show() {
+        System.out.println("Parent");
+    }
+}
+
+class Child extends Parent {
+
+    @Override
+    void show() {
+        System.out.println("Child");
+    }
+}
+```
+
+Usage:
+
+```java
+Parent obj = new Child();
+obj.show(); // Child
+```
+
+The overridden instance method is selected at runtime according to the actual object's class.
+
+### 12.5 Common Mistakes
+
+1. Assuming that changing only a method's return type creates an overload.
+2. Assuming overriding can happen without inheritance.
+3. Assuming overload selection depends on the actual runtime object. Overload resolution is generally performed at compile time.
+4. Forgetting the `@Override` annotation. It is optional, but recommended.
+5. Thinking static methods are overridden. Static methods are hidden rather than dynamically dispatched.
+
+### 12.6 DSA and Interview Relevance
+
+- **Overloading** appears in Java APIs when methods share a name but accept different parameter types or counts.
+- **Overriding** is important when working with inheritance, interfaces, comparators, and object-oriented design.
+- You do not need inheritance in every DSA problem, but you should be able to identify both concepts in Java code and explain the difference.
+
+### 12.7 Quick Revision
+
+Remember these two rules:
+
+**Overloading:** Same name, different parameter list, usually within the same class, resolved at compile time.
+
+**Overriding:** Inheritance, same method signature, different implementation, runtime dispatch for instance methods.
+
+
+
 ## 13. Important Rules to Remember
 
 1. A method has a name, a body, and a declared return type.
