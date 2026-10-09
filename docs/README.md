@@ -9,7 +9,6 @@ dsa-vault/
 ├── README.md
 ├── docs/
 │   ├── README.md
-│   ├── NOTE-TEMPLATE.md
 │   ├── 00-java-foundations/
 │   │   ├── 01-variables-and-data-types.md
 │   │   ├── 02-type-conversion.md
@@ -147,11 +146,8 @@ dsa-vault/
 │       ├── 07-intervals.md
 │       ├── 08-bfs-dfs.md
 │       └── 09-dp-patterns.md
-├── src/                         # Existing executable Java examples
-└── progress/
-    ├── learning-progress.md
-    ├── problem-tracker.md
-    └── mistake-log.md
+└── src/                         # Executable Java examples
+
 ```
 
 > This tree is a plan, not an assertion that every listed file already exists. Create topic notes as the material is studied. Keep executable code in the existing `src/` structure unless a future cleanup is explicitly planned.

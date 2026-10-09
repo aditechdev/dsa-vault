@@ -18,7 +18,7 @@ dsa-vault/
 ├── docs/                         # Learning notes and course roadmap
 │   ├── README.md                 # Complete DSA course map
 │   └── 00-java-foundations/      # Beginner Java notes
-└── src/                          # Existing Java implementations (preserved)
+└── src/                          # Java implementations
     ├── basic/
     └── intermediate/
 
