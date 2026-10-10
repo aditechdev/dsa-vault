@@ -5,6 +5,10 @@ This is the master course map for learning Data Structures and Algorithms in Jav
 ## Full Course Tree
 
 ```text
+🚀 IMPORTANT
+✅ DONE
+⚠️ PENDING
+
 dsa-vault/
 ├── README.md
 ├── docs/
@@ -19,33 +23,33 @@ dsa-vault/
 │   │   ├── 07-scanner-bufferreader.md ✅
 │   │   ├── 08-null.md ✅
 │   │   ├── 09-array-2d-array.md ✅
-│   │   ├── 10-scope-and-lifetime.md ⚠️PENDING
+│   │   ├── 10-scope-and-lifetime.md ⚠️
 │   │   ├── 11-classes-and-objects.md ✅
-│   │   ├── 12-stack-and-heap-basics.md ⚠️PENDING
-│   │   ├── 13-recursion-basics.md ⚠️PENDING
+│   │   ├── 12-stack-and-heap-basics.md ⚠️
+│   │   ├── 13-recursion-basics.md ⚠️
 │   │   └── 14-math-utilities.md ✅
 │   │
-│   ├── 01-java-collections/
-│   │   ├── 01-collections-overview.md
-│   │   ├── 02-arraylist.md
-│   │   ├── 03-hashmap.md
-│   │   ├── 04-hashset.md
-│   │   ├── 05-queue.md
-│   │   ├── 06-deque.md
-│   │   ├── 07-stack.md
-│   │   ├── 08-priority-queue.md
-│   │   ├── 09-linkedlist.md ⚠️PENDING
-│   │   └── 10-comparable-and-comparator.md ⚠️PENDING
+│   ├── 01-java-collections/ ✅ 
+│   │   ├── 01-collections-overview.md ✅
+│   │   ├── 02-arraylist.md ✅
+│   │   ├── 03-hashmap.md ✅
+│   │   ├── 04-hashset.md ✅
+│   │   ├── 05-queue.md ✅
+│   │   ├── 06-deque.md ✅
+│   │   ├── 07-stack.md ✅
+│   │   ├── 08-priority-queue.md ✅
+│   │   ├── 09-linkedlist.md ⚠️
+│   │   └── 10-comparable-and-comparator.md ⚠️
 │   │
-│   ├── 02-complexity-analysis/
-│   │   ├── 01-time-complexity.md
-│   │   ├── 02-space-complexity.md
-│   │   ├── 03-big-o-notation.md
-│   │   ├── 04-complexity-classes.md
-│   │   ├── 05-loop-complexity.md
-│   │   └── 06-recursion-complexity.md
+│   ├── 02-complexity-analysis/ ✅
+│   │   ├── 01-time-complexity.md ✅
+│   │   ├── 02-space-complexity.md ✅
+│   │   ├── 03-big-o-notation.md ✅
+│   │   ├── 04-complexity-classes.md ✅
+│   │   ├── 05-loop-complexity.md ✅
+│   │   └── 06-recursion-complexity.md ✅
 │   │
-│   ├── 03-arrays/
+│   ├── 03-arrays/ 🚀
 │   │   ├── 01-traversal-and-updates.md
 │   │   ├── 02-searching.md
 │   │   ├── 03-two-pointers.md
@@ -55,7 +59,7 @@ dsa-vault/
 │   │   ├── 07-difference-array.md
 │   │   └── 08-two-dimensional-arrays.md
 │   │
-│   ├── 04-strings/
+│   ├── 04-strings/ 🚀
 │   │   ├── 01-string-operations.md
 │   │   ├── 02-character-frequency.md
 │   │   ├── 03-palindromes-and-anagrams.md
@@ -63,7 +67,7 @@ dsa-vault/
 │   │   ├── 05-string-sliding-window.md
 │   │   └── 06-string-matching.md
 │   │
-│   ├── 05-hashing/
+│   ├── 05-hashing/ 🚀
 │   │   ├── 01-hashing-fundamentals.md
 │   │   ├── 02-frequency-counting.md
 │   │   ├── 03-hashmap-and-hashset-patterns.md
@@ -77,28 +81,28 @@ dsa-vault/
 │   │   ├── 05-counting-sort.md
 │   │   └── 06-stability-in-place-and-comparators.md
 │   │
-│   ├── 07-binary-search/
+│   ├── 07-binary-search/ 🚀
 │   │   ├── 01-basic-binary-search.md
 │   │   ├── 02-first-last-occurrence-and-bounds.md
 │   │   ├── 03-rotated-sorted-array.md
 │   │   ├── 04-binary-search-on-answer.md
 │   │   └── 05-two-dimensional-binary-search.md
 │   │
-│   ├── 08-recursion-backtracking/
+│   ├── 08-recursion-backtracking/ 🚀
 │   │   ├── 01-recursion-and-base-cases.md
 │   │   ├── 02-recursion-trees-and-complexity.md
 │   │   ├── 03-subsets-and-subsequences.md
 │   │   ├── 04-permutations-and-combinations.md
 │   │   └── 05-backtracking-patterns.md
 │   │
-│   ├── 09-linked-lists/
+│   ├── 09-linked-lists/ 🚀
 │   │   ├── 01-singly-and-doubly-linked-lists.md
 │   │   ├── 02-insertion-deletion-and-search.md
 │   │   ├── 03-reversal.md
 │   │   ├── 04-middle-and-cycle-detection.md
 │   │   └── 05-merge-and-pointer-patterns.md
 │   │
-│   ├── 10-stacks-queues/
+│   ├── 10-stacks-queues/ 🚀
 │   │   ├── 01-stack-and-queue-fundamentals.md
 │   │   ├── 02-valid-parentheses.md
 │   │   ├── 03-monotonic-stack.md
@@ -106,7 +110,7 @@ dsa-vault/
 │   │   ├── 05-deque-and-monotonic-queue.md
 │   │   └── 06-circular-queue.md
 │   │
-│   ├── 11-trees-bst/
+│   ├── 11-trees-bst/ 🚀
 │   │   ├── 01-tree-fundamentals.md
 │   │   ├── 02-dfs-traversals.md
 │   │   ├── 03-bfs-level-order.md
@@ -115,18 +119,18 @@ dsa-vault/
 │   │   ├── 06-lowest-common-ancestor.md
 │   │   └── 07-tree-views-and-serialization.md
 │   │
-│   ├── 12-heaps/
+│   ├── 12-heaps/ 🚀
 │   │   ├── 01-heap-fundamentals.md
 │   │   ├── 02-heapify-and-priority-queue.md
 │   │   ├── 03-top-k-and-kth-element.md
 │   │   └── 04-two-heaps-and-merge-k.md
 │   │
-│   ├── 13-greedy/
+│   ├── 13-greedy/ 🚀
 │   │   ├── 01-greedy-reasoning.md
 │   │   ├── 02-intervals-and-scheduling.md
 │   │   └── 03-classic-greedy-problems.md
 │   │
-│   ├── 14-graphs/
+│   ├── 14-graphs/ 🚀
 │   │   ├── 01-graph-representations.md
 │   │   ├── 02-bfs-and-dfs.md
 │   │   ├── 03-components-and-cycle-detection.md
@@ -135,7 +139,7 @@ dsa-vault/
 │   │   ├── 06-disjoint-set-union.md
 │   │   └── 07-minimum-spanning-tree.md
 │   │
-│   ├── 15-dynamic-programming/
+│   ├── 15-dynamic-programming/ 🚀
 │   │   ├── 01-dp-state-and-recurrence.md
 │   │   ├── 02-memoization-and-tabulation.md
 │   │   ├── 03-one-dimensional-dp.md
@@ -154,13 +158,13 @@ dsa-vault/
 │   │   ├── 02-fenwick-tree.md
 │   │   └── 03-segment-tree.md
 │   │
-│   └── 18-interview-patterns/
-│       ├── 01-two-pointers.md
-│       ├── 02-sliding-window.md
-│       ├── 03-fast-and-slow-pointers.md
-│       ├── 04-prefix-sum.md
-│       ├── 05-monotonic-stack-queue.md
-│       ├── 06-top-k-elements.md
+│   └── 18-interview-patterns/ 🚀
+│       ├── 01-two-pointers.md 🚀
+│       ├── 02-sliding-window.md 🚀
+│       ├── 03-fast-and-slow-pointers.md 🚀
+│       ├── 04-prefix-sum.md 🚀
+│       ├── 05-monotonic-stack-queue.md 🚀
+│       ├── 06-top-k-elements.md 🚀
 │       ├── 07-intervals.md
 │       ├── 08-bfs-dfs.md
 │       └── 09-dp-patterns.md
